@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+// fake db
+import data from "./data/data.json";
+
+// react hooks
+import { useState } from "react";
 
 function App() {
+  const [employees, setEmployees] = useState(data);
+  console.log(employees);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="display-1">Hello table</h1>
     </div>
   );
 }
