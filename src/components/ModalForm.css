@@ -1,9 +1,13 @@
 .modal-container {
   background-color: darkgrey !important;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.big {
+  font-size: 3rem;
 }
